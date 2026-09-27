@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Troop 134 in Folsom, California — Scouts BSA.">
+  <title>Our Leaders | Troop 134</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="data/site.js"></script>
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  
+<section class="page-hero"><div class="container"><div class="eyebrow">Adult leadership</div><h1>Our Leaders</h1><p class="lead">Leadership is listed by role and group email. Personal contact information is not published.</p></div></section>
+<section class="section"><div class="container"><div id="leaders-list" class="role-grid"></div></div></section>
+
+  <div id="site-footer"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      T134.mount("leaders.html");
+      T134.renderMeetingPlace();
+      T134.renderLeaders();
+    });
+  </script>
+</body>
+</html>

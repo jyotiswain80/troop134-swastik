@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Troop 134 in Folsom, California — Scouts BSA.">
+  <title>Events | Troop 134</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="data/site.js"></script>
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  
+<section class="page-hero"><div class="container"><div class="eyebrow">Calendar</div><h1>Upcoming events</h1><p class="lead">Campouts, meetings, service projects, and other troop activities are updated from the site's data file.</p></div></section>
+<section class="section"><div class="container"><div id="events-list"></div><p class="print-note">Tip: this page is designed to print cleanly.</p></div></section>
+
+  <div id="site-footer"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      T134.mount("events.html");
+      T134.renderMeetingPlace();
+      T134.renderEvents();
+    });
+  </script>
+</body>
+</html>

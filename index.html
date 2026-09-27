@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Troop 134 in Folsom, California — Scouts BSA.">
+  <title>Home | Troop 134</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="data/site.js"></script>
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Scouts BSA • Folsom, California</div>
+      <h1>Be Prepared.<br>Be Part of the Troop.</h1>
+      <p>Troop 134 is a Scout-led community where young people learn leadership, build skills, serve others, and have memorable adventures together.</p>
+      <div class="actions">
+        <a class="button" href="join.html">Join Us</a>
+        <a class="button secondary" href="events.html">See Upcoming Events</a>
+      </div>
+    </div>
+    <img class="hero-logo" src="images/logo/troop-134-logo.png" alt="Troop 134 official logo">
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-card"><div class="eyebrow">Meetings</div><h3 data-meeting-day>Tuesday</h3><p data-meeting-time>7:00 PM</p></div>
+      <div class="info-card"><div class="eyebrow">Where</div><h3>Journey Church</h3><p data-meeting-place>450 Blue Ravine Road, Folsom, CA 95630</p></div>
+      <div class="info-card"><div class="eyebrow">Instagram</div><h3>@troop134</h3><p><a href="https://www.instagram.com/troop134/" target="_blank" rel="noopener">Follow the troop</a></p></div>
+    </div>
+  </div>
+</section>
+<section class="section alt">
+  <div class="container">
+    <div class="section-head"><div><div class="eyebrow">What's next</div><h2>Upcoming events</h2></div><a href="events.html">View all events →</a></div>
+    <div id="home-events" class="event-grid"></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section-head"><div><div class="eyebrow">Troop at a glance</div><h2>A tradition of Scouting</h2></div></div>
+    <div id="stats" class="stat-strip"></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container cta">
+    <div class="eyebrow">Ready to visit?</div>
+    <h2>Come see what Troop 134 is about.</h2>
+    <p>Families can visit a Tuesday meeting, meet the troop, and learn what joining looks like.</p>
+    <a class="button" href="join.html">Start Here</a>
+  </div>
+</section>
+
+  <div id="site-footer"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      T134.mount("index.html");
+      T134.renderMeetingPlace();
+      T134.renderHomeEvents(); T134.renderStats();
+    });
+  </script>
+</body>
+</html>

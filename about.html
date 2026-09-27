@@ -25,6 +25,16 @@
   
 <section class="page-hero"><div class="container"><div class="eyebrow">About Troop 134</div><h1>Scout-led, service-minded, adventure-ready.</h1><p class="lead">Troop 134 is a Scouts BSA troop in Folsom, California, with 34 years of Scouting history.</p></div></section>
 <section class="section"><div class="container prose">
+<style>
+
+body {
+    background-image: url("images/troop-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .page-hero {
     background:
         linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -32,6 +42,51 @@
     padding: 55px 0;
     color: white;
 }
+
+.page-hero h1,
+.page-hero p,
+.page-hero .eyebrow {
+    color: white;
+}
+
+</style>
+
+3. Don't change anything else.
+
+Your <head> should end up roughly like:
+
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="data/site.js"></script>
+<script src="js/site.js" defer></script>
+
+<style>
+
+body {
+    background-image: url("images/troop-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.page-hero {
+    background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("images/troop-photo.jpg") center/cover no-repeat;
+    padding: 55px 0;
+    color: white;
+}
+
+.page-hero h1,
+.page-hero p,
+.page-hero .eyebrow {
+    color: white;
+}
+
+</style>
+
+</head>
 
 .page-hero h1,
 .page-hero p,
